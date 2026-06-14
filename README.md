@@ -6,7 +6,7 @@ This core features a  hardware pipeline architecture equipped with comprehensive
 
 ---
 
-## Verification Status: 100% Passed
+## Verified with the RISCV tests
 
 The core has successfully passed 100% of the verification test variants within the RV32I base instruction test suite (https://github.com/riscv-software-src/riscv-tests/tree/master). 
 * All computational (R-type, I-type), memory (Loads/Stores), control transfer (Branches, JAL, JALR), and upper-immediate (lui, auipc) instructions pass cycle-accurate architectural checks.

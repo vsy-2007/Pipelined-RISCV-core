@@ -1,14 +1,14 @@
 # RISC-V 5-Stage Pipelined Processor (RV32I)
 
-A fully functional, synthesizable 5-Stage Pipelined RISC-V Processor implementing the complete RV32I Base Integer Instruction Set in SystemVerilog/Verilog. 
+A fully functional 5-Stage Pipelined RISC-V Processor implementing the complete RV32I Base Integer Instruction Set in SystemVerilog/Verilog. 
 
-This core features a classic hardware pipeline architecture equipped with comprehensive data forwarding logic, load-use hazard stall detection, and automatic pipeline flushing for control hazards (branches/jumps).
+This core features a  hardware pipeline architecture equipped with comprehensive data forwarding logic, load-use hazard stall detection, and automatic pipeline flushing for control hazards (branches/jumps) with a no branch taken prediction.
 
 ---
 
 ## Verification Status: 100% Passed
 
-The core has successfully passed 100% of the verification test variants within the RV32I base instruction test suite. 
+The core has successfully passed 100% of the verification test variants within the RV32I base instruction test suite (https://github.com/riscv-software-src/riscv-tests/tree/master). 
 * All computational (R-type, I-type), memory (Loads/Stores), control transfer (Branches, JAL, JALR), and upper-immediate (lui, auipc) instructions pass cycle-accurate architectural checks.
 * Environment execution controls (ecall) are fully mapped to handle clean simulation halting (sim_halt).
 

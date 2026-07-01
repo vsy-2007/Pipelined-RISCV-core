@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration Paths
-ISA_DIR="/home/vsy/rv32i_with_pipelining/riscv-tests/isa"
+ISA_DIR= "$2" ## path to the isa directory in the cloned riscv test suite repo 
 PREFIX="riscv-none-elf-"
 
 if [ -z "$1" ]; then
